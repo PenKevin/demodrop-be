@@ -23,8 +23,8 @@ public class ProducerController {
 
     @GetMapping("/producers")
     public ResponseEntity<Object> getProducer(){
-        List<ProducerDto> ld = service.getProducers();
-        return new ResponseEntity<>(ld, HttpStatus.OK);
+        List<ProducerDto> lp = service.getProducers();
+        return new ResponseEntity<>(lp, HttpStatus.OK);
     }
 
     @PostMapping("/producers")
