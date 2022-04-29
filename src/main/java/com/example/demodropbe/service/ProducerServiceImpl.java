@@ -11,9 +11,11 @@ import java.util.List;
 @Service
 public class ProducerServiceImpl implements ProducerService{
 
-    private final ProducerRepository repos;
+    private ProducerRepository repos;
+
 
     public ProducerServiceImpl(ProducerRepository repos) {this.repos = repos;}
+
     @Override
     public List<ProducerDto> getProducers() {
         List<Producer> lp = this.repos.findAll();

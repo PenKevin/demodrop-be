@@ -13,7 +13,10 @@ public class ManagementServiceImpl implements ManagementService{
 
     private final ManagementRepository repos;
 
-    public ManagementServiceImpl(ManagementRepository repos) { this.repos = repos;}
+
+    public ManagementServiceImpl(ManagementRepository repos) {
+        this.repos = repos;
+    }
 
     @Override
     public List<ManagementDto> getManagement() {
